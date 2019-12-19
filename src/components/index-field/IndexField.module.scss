@@ -1,0 +1,26 @@
+.InputField {
+  position: relative;
+  margin-right: 20px;
+
+  input {
+    width: 160px;
+    padding: 5px 2px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1.1rem;
+    transition: border-bottom-color .2s;
+
+    &:focus {
+      border-bottom: 1px solid var(--primary-color);
+    }
+  }
+
+  &__error {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    color: red;
+    font-size: .9rem;
+  }
+}
